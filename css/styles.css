@@ -122,21 +122,19 @@ ul {
 }
 
 .hero-section {
-  /* background-color: #2f303a; */
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
 }
 
-.hero-container {
-  content: '';
+.hero-image {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-size: contain;
-  max-width: 1600px;
+  width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
 }
 
 .hero-title {
@@ -185,6 +183,34 @@ ul {
 
 .benefit-item {
   width: calc((100% - 90px) / 4);
+}
+
+.benefit-item::before {
+  width: 270px;
+  height: 120px;
+  content: '';
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.antenna-icon::before {
+  background-image: url(../images/benefit-0.svg);
+}
+
+.clock-icon::before {
+  background-image: url(../images/benefit-1.svg);
+}
+
+.diagram-icon::before {
+  background-image: url(../images/benefit-2.svg);
+}
+
+.astronaut-icon::before {
+  background-image: url(../images/benefit-3.svg);
 }
 
 .benefit-title {
