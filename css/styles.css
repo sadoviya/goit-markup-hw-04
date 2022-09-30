@@ -130,8 +130,9 @@ ul {
 .hero-image {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
-  width: 1600px;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-color: #c4c4c4;
@@ -213,7 +214,12 @@ ul {
   background-image: url(../images/benefit-3.svg);
 }
 
-.benefit-title {
+/* Оптимізувати svg файли */
+/* Зробити спрайт */
+/* Зробити іконки контактів */
+/* Рохмір svg в самому файлі + розмір відображення */
+
+д .benefit-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -297,6 +303,50 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--slave-text-color);
+  margin-bottom: 16px;
+}
+
+.member-social-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.member-social-item {
+  width: 44px;
+  height: 44px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.client-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+  margin-bottom: 50px;
+}
+
+.client-list {
+  display: flex;
+  gap: 30px;
+}
+
+.client-item {
+  width: 170px;
+  height: 92px;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #AFB1B8;
+}
+
+.client-link {
+
 }
 
 .footer {
@@ -339,6 +389,39 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+  gap: 70px;
+}
+
+.footer-social-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer-social-list {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social-item {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.footer-social-link {
 }
 
 .visually-hidden {
