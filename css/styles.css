@@ -226,12 +226,7 @@ ul {
   background-image: url(../images/benefit-3.svg);
 }
 
-/* Оптимізувати svg файли */
-/* Зробити спрайт */
-/* Зробити іконки контактів */
-/* Рохмір svg в самому файлі + розмір відображення */
-
-д .benefit-title {
+.benefit-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -324,23 +319,35 @@ ul {
   justify-content: center;
 }
 
-.member-social-item {
+/* .member-social-item {не задіяний} */
+
+.member-social-link {
   width: 44px;
   height: 44px;
-  background-color: #000;
+  background-color: var(--pure-white-color);
+  fill: #afb1b8;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.member-social-link:hover,
+.member-social-link:focus {
+  background-color: var(--accent-site-color);
+  fill: var(--pure-white-color);
+}
+
+.clients-section {
+  background-color: var(--pure-white-color);
 }
 
 .client-title {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-
-  color: #212121;
   margin-bottom: 50px;
 }
 
@@ -349,15 +356,24 @@ ul {
   gap: 30px;
 }
 
-.client-item {
-  width: 170px;
-  height: 92px;
-  background-color: #fff;
-  border-radius: 4px;
-  border: 1px solid #afb1b8;
-}
+/* .client-item {не задіяний} */
 
 .client-link {
+  width: 170px;
+  height: 92px;
+  background-color: var(--pure-white-color);
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
+}
+
+.client-link:hover,
+.client-link:focus {
+  fill: var(--accent-site-color);
+  border-color: var(--accent-site-color);
 }
 
 .footer {
@@ -409,11 +425,9 @@ ul {
 }
 
 .footer-social-text {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--pure-white-color);
